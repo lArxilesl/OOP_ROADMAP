@@ -1,10 +1,21 @@
+import convertor.HorsePowerConvertorAdapter;
+import itarator.Iterator;
+import modelsOfCar.Bugatti;
+import modelsOfCar.Ferrari;
+import modelsOfCar.Lamborghini;
+import modelsOfCar.MercedesBenz;
+import remoteControl.CarRemoteControl;
+import remoteControl.MoveCarForward;
+import repository.CarRepository;
+import repository.Garage;
+
 public class Main {
 
     public static void main(String[] args) throws CloneNotSupportedException {
 
 
         Main main = new Main();
-        
+
         /* main.testCommand();
            main.testAdapter();
            main.testIntarator();
@@ -52,30 +63,30 @@ public class Main {
 
         Iterator iterator = carRepository.getIterator();
 
-        // Iterator output.
+        // itarator.Iterator output.
         while (iterator.hasNext()) {
-            System.out.println("Car make = " + iterator.next());
+            System.out.println("carInterface.Car make = " + iterator.next());
         }
     }
 
     void testComposite(){
-        // Initialize different Ferrari objects
+        // Initialize different modelOfCar.Ferrari objects
         Ferrari ferrari1 = new Ferrari();
         Ferrari ferrari2 = new Ferrari();
         Ferrari ferrari3 = new Ferrari();
 
-        // Initialize different MercedesBenz objects
+        // Initialize different modelOfCar.MercedesBenz objects
         MercedesBenz mercedesBenz1 = new MercedesBenz();
         MercedesBenz mercedesBenz2 = new MercedesBenz();
 
-        // Initialize different Bugatti objects
+        // Initialize different modelOfCar.Bugatti objects
         Bugatti bugatti1 = new Bugatti();
 
-        // Initialize different Lamborghini objects
+        // Initialize different modelOfCar.Lamborghini objects
         Lamborghini lamborghini1 = new Lamborghini();
         Lamborghini lamborghini2 = new Lamborghini();
 
-        // Initializes Garage objects
+        // Initializes repository.Garage objects
         Garage garage1 = new Garage();
         Garage garage2 = new Garage();
 
